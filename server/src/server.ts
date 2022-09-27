@@ -14,8 +14,6 @@ const prisma = new PrismaClient({
     log: ['query']
 })
 
-//localhost:3333/ads
-
 app.get('/games', async (req, res) => {
     const games = await prisma.game.findMany({
         include: {
