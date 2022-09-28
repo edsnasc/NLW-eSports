@@ -25,7 +25,7 @@ app.get('/games', async (req, res) => {
         }
     })
 
-    return res.json([games]);
+    return res.json(games);
 });
 
 app.post('/games/:id/ads', async (req, res) => {
@@ -48,7 +48,7 @@ app.post('/games/:id/ads', async (req, res) => {
     })
 
 
-    return res.status(201).json([ad]);
+    return res.status(201).json(ad);
 });
 
 
