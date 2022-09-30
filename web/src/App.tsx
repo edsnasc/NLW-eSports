@@ -8,7 +8,7 @@ import logoImage from './assets/logo.svg';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { GameController } from 'phosphor-react';
-import { Input } from './components/Form/input';
+import { Input } from './components/Form/Input';
 
 interface Game {
   id: string
