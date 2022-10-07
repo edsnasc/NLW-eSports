@@ -97,9 +97,9 @@ app.get('/ads/:id/discord' , async (req, res) => {
         }
     })
 
-    return res.json([{
+    return res.json({
         discord: ad.discord
-    }])
+    })
 })
 
 app.listen(3333)
